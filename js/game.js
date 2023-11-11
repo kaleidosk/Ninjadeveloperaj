@@ -34,5 +34,7 @@ class Game {
         this.update();
         window.requestAnimationFrame(()=>  this.gameLoop()); 
     }
-    update(){}
+    update(){
+        this.player.move();
+    }
 }
