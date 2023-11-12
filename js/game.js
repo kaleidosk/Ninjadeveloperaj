@@ -14,7 +14,13 @@ class Game {
         );
         this.width = 600;
         this.height = 600;
-        this.obstacles = []; // new Obstacle()
+        this.obstacles = [new Obstacle(
+            this.gameScreen,
+            0,
+            0,
+            100,
+            100
+        )]
         this.scoreelements = []
         this.score = 0;
         this.lives = 3;
