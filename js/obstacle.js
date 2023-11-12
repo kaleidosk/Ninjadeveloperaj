@@ -18,7 +18,6 @@ this.top = Math.floor(Math.random() * 300);
         updatePosition(){
             this.element.style.left = `${this.left}px`;
             this.element.style.top = `${this.top}px`;
-            console.log('obstacle position', this.element.getBoundingClientRect())
           }
     
         move(){
