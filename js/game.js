@@ -26,6 +26,7 @@ class Game {
         this.gameScreen.style.height = `${this.height}px`;
         this.startScreen.style.display = 'none';
         this.gameScreen.style.display = 'block';
+        this.gameLoop()
     }
     gameLoop(){
         if(this.gameIsOver === true){
@@ -36,5 +37,5 @@ class Game {
     }
     update(){
         this.player.move();
+       }
     }
-}
