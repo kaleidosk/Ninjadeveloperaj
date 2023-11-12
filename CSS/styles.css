@@ -5,6 +5,8 @@ body {
   
   #game-intro {
     padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
   }
   
   #game-container {
@@ -35,4 +37,25 @@ body {
     100% {
       background-position: 600px 50;
     }
+  }
+
+  .game-intro p {
+    font-size: 18px;
+    font-family: "Verdana";
+  }
+
+  .arrows-images {
+    width: 500px;
+    height: 300px;
+    align-content: center;
+    display: block;
+    justify-content: center;
+  }
+
+  .ninjaprogr { 
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    display: block;
+    justify-content: center;
   }
