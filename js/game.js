@@ -12,15 +12,9 @@ class Game {
             100,
             "/images/Ninja.png"
         );
-        this.width = 700;
+        this.width = 680;
         this.height = 430;
-        this.obstacles = [new Obstacle(
-            this.gameScreen,
-            0,
-            0,
-            100,
-            100
-        )]
+        this.obstacles = []
         this.scoreelements = []
         this.score = 0;
         this.lives = 3;
@@ -55,7 +49,7 @@ class Game {
           this.lives--;
           i--;
         } 
-        else if (obstacle.top > this.height) {
+        else if (obstacle.rigth > this.width) {
           this.score++;
           obstacle.element.remove();
           this.obstacles.splice(i, 1);
