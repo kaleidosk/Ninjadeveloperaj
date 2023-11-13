@@ -6,14 +6,14 @@ class Game {
         this.gameEndScreen = document.getElementById('game-end');
         this.player = new Player(
             this.gameScreen, 
-            10,
-            550,
+            40,
+            650,
             100,
             100,
             "/images/Ninja.png"
         );
-        this.width = 600;
-        this.height = 600;
+        this.width = 700;
+        this.height = 430;
         this.obstacles = [new Obstacle(
             this.gameScreen,
             0,

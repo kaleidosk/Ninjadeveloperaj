@@ -49,6 +49,9 @@ window.onload = function () {
     startGame();
   });
 
+  restartButton.addEventListener("click", function () {
+    restartGame();
+  });
 
    window.addEventListener("keydown", handleKeydown);
 };
