@@ -1,7 +1,7 @@
 body {
     padding: 0;
     text-align: center;
-    background-color: #e3d1e3;;
+    background-color: #e3d1e3;
   }
   
   #game-intro {
@@ -63,4 +63,24 @@ body {
   height: 40em;
   width: 45em;
   margin-top: -6px;
+  }
+
+  .ninjaprogr { 
+    width: 300px;
+    height: 300px;
+    align-content: center;
+    display: block;
+    justify-content: center;
+  }
+
+  .game-intro p {
+    font-size: 18px;
+    font-family: "Verdana";
+  }
+  .arrows-images {
+    width: 500px;
+    height: 300px;
+    align-content: center;
+    display: block;
+    justify-content: center;
   }
