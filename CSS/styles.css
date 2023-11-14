@@ -78,6 +78,9 @@ body {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    width: 100vw;
+    padding: 20px 0px;
+   
     
   }
 
@@ -89,6 +92,7 @@ body {
     padding-left: 600px;
     margin-bottom: 5%;
     
+    
 
   }
 
@@ -98,8 +102,6 @@ body {
     text-align: center;
    
   }
-
-
 
   #game-intro .description {
     display: flex;
@@ -131,12 +133,18 @@ body {
     margin-bottom: 5%;
   }
 
-  #game-intro .background {
+  #game-intro .frame {
     padding-left: 11%;
     height: 50em;
     width: 55em;
-    margin-bottom: -900px;
+    margin-bottom: -800px;
+    background-image: url(../images/Screensaver.jpg);
     
+   
     }
+
+    
+
+
 
     
