@@ -15,7 +15,7 @@ class Game {
         this.width = 680;
         this.height = 430;
         this.obstacles = []
-        this.scoreelements = []
+        this.techElements = []
         this.score = 0;
         this.lives = 3;
         this.gameIsOver = false;
@@ -42,6 +42,7 @@ class Game {
       for (let i = 0; i < this.obstacles.length; i++) {
         const obstacle = this.obstacles[i];
         obstacle.move();
+        console.log(obstacle)
   
         if (this.player.didCollide(obstacle)) {
           obstacle.element.remove();
@@ -56,6 +57,20 @@ class Game {
           i--;
         }
       }
+     //Loop for earning points
+      for (let i = 0; i < this.techElements.length; i++) {
+        const obstacle = this.techElements[i];
+        obstacle.move();
+        console.log(obstacle)
+
+  
+        if (this.player.didCollide2(obstacle)) {
+          obstacle.element.remove();
+          this.techElements.splice(i, 1);
+          this.score ++
+          i--;
+        } 
+      }
   
       if (this.lives === 0) {
         this.endGame();
@@ -64,6 +79,13 @@ class Game {
       if (Math.random() > 0.98 && this.obstacles.length < 1) {
         this.obstacles.push(new Obstacle(this.gameScreen));
       }
+
+      let imgSrc
+      // Do a random Math that gets 0, 1, or 2. Depending on the result, imgSrc will be one of the 3 tech images.
+      if (Math.random() > 0.98 && this.techElements.length < 1) {
+        this.techElements.push(new Earningpoints(this.gameScreen, imgSrc));
+      }
+
     }
 
     endGame() {
