@@ -1,14 +1,11 @@
 body {
-    padding: 0;
-    text-align: center;
-    background-color: #e3d1e3;
-  }
+  padding: 0;
+  padding: 20px 0px;
+}
+
+
+
   
-  #game-intro {
-    padding: 20px 0px;
-    align-items: center;
-    justify-content: center;
-  }
   
   #game-container {
   display: flex;
@@ -73,14 +70,73 @@ body {
     justify-content: center;
   }
 
-  .game-intro p {
-    font-size: 18px;
-    font-family: "Verdana";
-  }
-  .arrows-images {
-    width: 500px;
-    height: 300px;
+
+  /* This is the Game Intro CSS */
+
+  #game-intro {
+    display: flex;
     align-content: center;
-    display: block;
     justify-content: center;
+    flex-direction: column;
+    
   }
+
+  #game-intro .logo-img {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    padding-left: 600px;
+    margin-bottom: 5%;
+    
+
+  }
+
+  #game-intro .header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+
+
+
+  #game-intro .description {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%; 
+  }
+
+  #game-intro ul {
+    list-style-type: none;
+    padding-right: 4%;
+  }
+
+  #game-intro h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 60px;
+  }
+
+
+  #game-intro .arrows-images {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 280px;
+    padding-left: 41%;
+    margin-bottom: 5%;
+  }
+
+  #game-intro .background {
+    padding-left: 11%;
+    height: 50em;
+    width: 55em;
+    margin-bottom: -900px;
+    
+    }
+
+    
