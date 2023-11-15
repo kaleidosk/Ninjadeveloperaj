@@ -82,6 +82,8 @@ class Game {
 
       let imgSrc
       // Do a random Math that gets 0, 1, or 2. Depending on the result, imgSrc will be one of the 3 tech images.
+     
+
       if (Math.random() > 0.98 && this.techElements.length < 1) {
         this.techElements.push(new Earningpoints(this.gameScreen, imgSrc));
       }
