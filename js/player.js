@@ -24,13 +24,13 @@ class Player {
       this.top += this.directionY;
   
 
-      if (this.left < 5) {
-        this.left = 5;
+      if (this.left < 10) {
+        this.left = 10;
       }
   
 
-      if (this.top <20) {
-        this.top = 20;
+      if (this.top <10) {
+        this.top = 10;
       }
   
     
@@ -51,6 +51,21 @@ class Player {
     }
   
     didCollide(obstacle) {
+      const playerRect = this.element.getBoundingClientRect();
+      const obstacleRect = obstacle.element.getBoundingClientRect();
+  
+      if (
+        playerRect.left < obstacleRect.right &&
+        playerRect.right > obstacleRect.left &&
+        playerRect.top < obstacleRect.bottom &&
+        playerRect.bottom > obstacleRect.top
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    didCollide2(obstacle) {
       const playerRect = this.element.getBoundingClientRect();
       const obstacleRect = obstacle.element.getBoundingClientRect();
   
