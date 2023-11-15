@@ -67,7 +67,7 @@ class Game {
         if (this.player.didCollide2(obstacle)) {
           obstacle.element.remove();
           this.techElements.splice(i, 1);
-          this.score ++
+          this.score ++;
           i--;
         } 
       }
@@ -80,9 +80,12 @@ class Game {
         this.obstacles.push(new Obstacle(this.gameScreen));
       }
 
-      let imgSrc
+      //let imgSrc
       // Do a random Math that gets 0, 1, or 2. Depending on the result, imgSrc will be one of the 3 tech images.
-     
+     let imgArray =['../images/ScorePNGs/CSS.png', '../images/ScorePNGs/HTML5.png', '../images/ScorePNGs/JavaScript_logo_PNG1.png']
+     let number = Math.floor(Math.random()* imgArray.length)
+     let imgSrc = imgArray [`${number}`]
+
 
       if (Math.random() > 0.98 && this.techElements.length < 1) {
         this.techElements.push(new Earningpoints(this.gameScreen, imgSrc));
