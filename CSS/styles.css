@@ -1,6 +1,8 @@
 body {
   padding: 0;
   padding: 20px 0px;
+  background-color: rgba(238, 74, 107, 0.221);
+  
 }
 
 
@@ -68,6 +70,7 @@ body {
     align-content: center;
     display: block;
     justify-content: center;
+    
   }
 
 
@@ -80,6 +83,7 @@ body {
     flex-direction: column;
     width: 100vw;
     padding: 20px 0px;
+    
    
     
   }
@@ -91,8 +95,9 @@ body {
     width: 400px;
     padding-left: 600px;
     margin-bottom: 5%;
-    
-    
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 
   }
 
@@ -100,6 +105,11 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #41e6ac85;
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    
    
   }
 
@@ -109,11 +119,14 @@ body {
     text-align: center;
     flex-direction: column;
     margin-top: 5%; 
+    
+    
   }
 
   #game-intro ul {
     list-style-type: none;
     padding-right: 4%;
+    
   }
 
   #game-intro h2 {
@@ -121,6 +134,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-size: 60px;
+    
   }
 
 
@@ -131,18 +145,32 @@ body {
     width: 280px;
     padding-left: 41%;
     margin-bottom: 5%;
+    
   }
 
-  #game-intro .frame {
-    padding-left: 11%;
-    height: 50em;
-    width: 55em;
-    margin-bottom: -800px;
-    background-image: url(../images/Screensaver.jpg);
-    
-   
-    }
+  #game-intro .ninjaprogr {
+    display: none
+  }
 
+  #start-button {
+    font-size: 30px;
+    background-color: #ed211a;
+    color: #fff;
+    padding: 20px 40px;
+    border: solid, black;
+    box-shadow: 0;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 420px;
+    margin-right: 420px;
+    
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+  
     
 
 
