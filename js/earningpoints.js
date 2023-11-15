@@ -3,8 +3,8 @@ class Earningpoints {
 this.gameScreen = gameScreen;
 this.top= Math.floor(Math.random() * 150 + 40);
 this.right=0;
-this.width = 150;
-this.height = 150;
+this.width = 80;
+this.height = 50;
 // let languages = ['CSS','HTML','JAVASCRIPT'];
 // let randomposition = Math.floor(Math.random()* languages.length)
 // let language = languages [randomposition]
