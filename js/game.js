@@ -39,6 +39,8 @@ class Game {
     update() {
       this.player.move();
   
+
+      
       for (let i = 0; i < this.obstacles.length; i++) {
         const obstacle = this.obstacles[i];
         obstacle.move();
@@ -48,6 +50,7 @@ class Game {
           obstacle.element.remove();
           this.obstacles.splice(i, 1);
           this.lives--;
+          document.getElementById('lives').textContent = this.lives;
           i--;
         } 
         else if (obstacle.rigth > this.width) {
@@ -69,6 +72,8 @@ class Game {
           this.techElements.splice(i, 1);
           this.score ++
           i--;
+          console.log(this.techElements)
+        
         } 
       }
   
