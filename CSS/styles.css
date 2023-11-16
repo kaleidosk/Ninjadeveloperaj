@@ -1,5 +1,5 @@
 body {
-  padding: 0;
+  text-align: center;
   padding: 20px 0px;
   background-color: rgba(238, 74, 107, 0.221);
   
@@ -81,22 +81,25 @@ body {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100vw;
-    padding: 20px 0px;
+    
+    
+    
     
    
     
   }
 
-  #game-intro .logo-img {
+  .logo-img {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 400px;
-    padding-left: 600px;
+    height: 400px;
+    width: 800px;
+    margin-right: 180px;
+    margin-left: 180px;
     margin-bottom: 5%;
-    align-content: center;
-    text-align: center;
+    margin-top: 10%;
     justify-content: center;
 
   }
@@ -145,7 +148,7 @@ body {
     flex-direction: column;
     height: 200px;
     width: 280px;
-    padding-left: 41%;
+    padding-left: 38%;
     margin-bottom: 5%;
     
   }
