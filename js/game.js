@@ -70,6 +70,8 @@ class Game {
           obstacle.element.remove();
           this.techElements.splice(i, 1);
           this.score ++
+          document.getElementById('score').textContent = this.score;
+        
           i--;
           console.log(this.techElements)
 
