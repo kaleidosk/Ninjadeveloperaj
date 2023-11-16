@@ -97,7 +97,7 @@ body {
     height: 400px;
     width: 800px;
     margin-right: 180px;
-    margin-left: 180px;
+    margin-left: 175px;
     margin-bottom: 5%;
     margin-top: 10%;
     justify-content: center;
@@ -109,10 +109,12 @@ body {
     flex-direction: column;
     text-align: center;
     background-color: #41e6ac85;
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 400px;
+    margin-right: 400px;
     border: 5px solid black;
     border-radius: 20px;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 20px;
 
     
    
@@ -120,10 +122,15 @@ body {
 
   #game-intro .description {
     display: flex;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     flex-direction: column;
     margin-top: 5%; 
+    font-family: 'Vina Sans', sans-serif;
+    background-color: #41e6ac85;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-image: url(../images/Screensaver.jpg);
     
     
   }
@@ -134,11 +141,29 @@ body {
     
   }
 
+  #game-intro ul img {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+  }
+
+  #game-intro #JS {
+    width: 180px;
+    height: 120px;
+  }
+
+  #game-intro #HTMLPNG {
+    width: 100px;
+    height: 100px;
+  }
+
+
+
   #game-intro h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 60px;
+    
     
   }
 
@@ -153,30 +178,81 @@ body {
     
   }
 
+  #game-intro h2 {
+    background-color: #41e6ac85;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 55px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
   #game-intro .ninjaprogr {
     display: none
   }
 
   #start-button {
-    font-size: 30px;
-    background-color: #ed211a;
+    /*font-size: 30px;
+    background-color: #ed211a; 
     color: #fff;
     padding: 20px 40px;
     border: solid, black;
     box-shadow: 0;
-    border-radius: 15px;
+    border-radius: 15px; */
     margin-bottom: 20px;
     margin-left: 420px;
-    margin-right: 420px;
+    margin-right: 430px;
+    transition: transform 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
     
+  }
+
+  #start-button img {
+    width: 300px;
+    height: 300px;
   }
   
   button:hover {
     cursor: pointer;
   }
 
+
+
   
-    
+    /* Game-end Last Screen CSS */
+
+    #game-end {
+      display: none;
+    }
+
+    #game-end {
+      
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100vw;
+    }
+
+    #game-end h1 {
+      display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #41e6ac;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 50px;
+    }
 
 
 
