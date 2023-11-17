@@ -6,9 +6,15 @@ window.onload = function () {
 
   function startGame() {
     console.log("start game");
-    game = new Game(); 
+    game = new Game();
     game.start(); 
+    
+   
   }
+
+ 
+
+
 
   function restartGame() {
     location.reload();

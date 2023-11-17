@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/resetstyle.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <title>Ninja Programer</title>
@@ -35,8 +35,10 @@
                   <li> <img src="./images/ScorePNGs/HTML5.png" id="HTMLPNG"/></li>
                 </ul>
                 Collect as many as you can and don't forget to avoid Jasmine!<br>
+                <img src="./images/Jasmine.png" id="Jasmine" />
                 When you're ready, just click on the ninja in the curly braces to start the game.
              </p>
+             
           </div>   
         <span>
             <h2>Control buttons</h2>
@@ -48,21 +50,20 @@
       </div>
 
       <div id="game-container">
-        <div id="scoresection">
-        <p>Lives: <span id="lives">3</span></p>
-        <p>Score: <span id="score">0</span></p>
-        </div>
         <div id="game-screen">
           <div id="computer">
             <img src="./images/Computer.png" alt="computer img"/>
         </div>
+        <div id="scoresection">
+          <p>Lives: <span id="lives">3</span></p>
+          <p>Score: <span id="score">0</span></p>
+          </div>
       </div>
       </div>
       
 
       <div id="game-end">
         <h1>Game Over</h1>
-        <p>Final score</p>
         <button id="restart-button">Restart</button>
       </div>
     </main>

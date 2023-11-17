@@ -26,6 +26,12 @@ class Game {
         this.gameScreen.style.height = `${this.height}px`;
         this.startScreen.style.display = 'none';
         this.gameScreen.style.display = 'block';
+        this.gameScreen.style.display = 'audio';
+        
+        
+        
+
+
         this.gameLoop()
     }
     gameLoop(){
@@ -38,8 +44,6 @@ class Game {
   
     update() {
       this.player.move();
-  
-
       
       for (let i = 0; i < this.obstacles.length; i++) {
         const obstacle = this.obstacles[i];
@@ -52,6 +56,7 @@ class Game {
           this.lives--;
           document.getElementById('lives').textContent = this.lives;
           i--;
+          
         } 
         else if (obstacle.right + 80 > this.width) {
           obstacle.element.remove();
@@ -71,6 +76,7 @@ class Game {
           this.techElements.splice(i, 1);
           this.score ++
           document.getElementById('score').textContent = this.score;
+          
         
           i--;
           console.log(this.techElements)
@@ -107,6 +113,7 @@ class Game {
     endGame() {
       this.player.element.remove();
       this.obstacles.forEach(obstacle => obstacle.element.remove());
+      
   
       this.gameIsOver = true;
   
@@ -114,6 +121,8 @@ class Game {
       this.gameScreen.style.display = "none";
      
       this.gameEndScreen.style.display = "block";
+      
+     
     }
   }
 

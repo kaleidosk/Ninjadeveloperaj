@@ -25,6 +25,7 @@ body {
     background-image: url(../images/Screensaver.jpg);
     animation: slide 5s linear infinite;
     border-radius: 3%;
+    margin-top: 200px;
   }
   
   @keyframes slide {
@@ -32,7 +33,7 @@ body {
       background-position: 0 0px;
     }
     95% {
-      background-position: 500px 0;
+      background-position: 1300px 0;
     }
     100% {
       background-position: 600px 50;
@@ -44,7 +45,7 @@ body {
   }
 
   #scoresection {
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: left;
     padding-right: 600px;
@@ -52,8 +53,8 @@ body {
   }
 
   #scoresection p{
-    margin-bottom: 2px;
-    font-family:fantasy;
+    margin-bottom: 4px;
+    font-family: fantasy;
     font-size: larger;
     font-weight: bolder;
   }
@@ -83,11 +84,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100vw;
-    
-    
-    
-    
-   
     
   }
 
@@ -148,23 +144,21 @@ body {
   }
 
   #game-intro #JS {
-    width: 180px;
+    width: 195px;
     height: 120px;
   }
 
   #game-intro #HTMLPNG {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 115px;
   }
 
-
-
-  #game-intro h2 {
+  #game-intro #Jasmine {
+    width: 180px;
+    height: 160px;
     display: flex;
-    flex-direction: column;
     text-align: center;
-    
-    
+    margin-left: 500px;
   }
 
 
@@ -184,8 +178,8 @@ body {
     border-radius: 20px;
     font-family: 'Vina Sans', sans-serif;
     font-size: 55px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
   #game-intro .ninjaprogr {
@@ -234,15 +228,16 @@ body {
 
     #game-end {
       
-      align-content: center;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      width: 100vw;
+      display: none;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
     }
 
     #game-end h1 {
-      display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #41e6ac;
@@ -252,6 +247,23 @@ body {
     border-radius: 20px;
     font-family: 'Vina Sans', sans-serif;
     font-size: 50px;
+    }
+
+    #game-end #restart-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 960px;
+    margin-right: 300px;
+    border-radius: 20px;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: #ed211a; 
+    color: #fff;
+    border: solid, black;
     }
 
 

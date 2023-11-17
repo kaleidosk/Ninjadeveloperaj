@@ -1,7 +1,7 @@
 class Earningpoints {
     constructor(gameScreen, imgSrc){
 this.gameScreen = gameScreen;
-this.top= Math.floor(Math.random() * 150 + 40);
+this.top= Math.floor(Math.random() * 150 + 140);
 this.right=0;
 this.width = 80;
 this.height = 50;
